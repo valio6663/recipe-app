@@ -1,0 +1,19 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.placeholder {
+    width: 100px; /* Запазва празно пространство при липсващ бутон */
+}
+
+.pagination__pages {
+    width: 120px; /* Фиксирана ширина */
+    text-align: center;
+    white-space: nowrap; /* Гарантира, че текстът остава на един ред */
+    overflow: hidden; /* Предотвратява евентуално разтягане */
+    @extend .btn--inline;
+}
+
