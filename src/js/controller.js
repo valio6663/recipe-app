@@ -14,8 +14,8 @@ import 'core-js/stable'
 import 'regenerator-runtime/runtime'
 // import { fround } from 'core-js/core/number'
 
-if (module.hot){
-  module.hot.accept()
+if (process.env.NODE_ENV === 'development' && module.hot) {
+  module.hot.accept();
 }
 
 const recipeContainer = document.querySelector('.recipe');
